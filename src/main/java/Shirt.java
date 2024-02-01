@@ -35,7 +35,7 @@ public class Shirt implements IClothing {
         buttons.add(button);
     }
 
-    public class Button {
+    public static class Button {
         public boolean fancy;
     }
 }
