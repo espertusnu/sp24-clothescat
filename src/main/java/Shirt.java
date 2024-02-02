@@ -19,15 +19,6 @@ public class Shirt implements IClothing {
         System.out.println("Folding");
     }
 
-    @Override
-    public boolean equals(Object other) {
-        if (other instanceof Shirt shirt) {
-//            Shirt shirt = (Shirt) other;
-            return size == shirt.size && buttons.equals(shirt.buttons);
-        }
-        return false;
-    }
-
     public void addButton(Button button) {
         if (buttons == null) {
             buttons = new ArrayList<>();
